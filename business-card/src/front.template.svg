@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="850" viewBox="0 0 550 850">
+  <!-- Scale: 1 mm = 10 px. Trim 55 x 85 mm. Safe area 49 x 79 mm (3 mm inset). -->
+  <defs>
+    <clipPath id="card-clip"><rect width="550" height="850"/></clipPath>
+    <linearGradient id="em-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1676C9"/>
+      <stop offset="1" stop-color="#3FA9E6"/>
+    </linearGradient>
+  </defs>
+  <g id="Card_Front" clip-path="url(#card-clip)">
+    <rect id="Background" width="550" height="850" fill="#FFFFFF"/>
+
+    <g id="Product_Photo_ActualSize_48.4x57.0mm">
+      <image id="CARDIO_EM_Product" x="-47.2" y="197" width="683" height="727.5" preserveAspectRatio="none" xlink:href="__PRODUCT__" href="__PRODUCT__"/>
+    </g>
+
+    <g id="Logo_HEALTHRIAN">
+      <g id="Logo_Mark" transform="translate(35 36)">
+        <path id="Mark_L_Top" fill="#1A95DC" d="M0 9A8 8 0 0 1 16 9C16 15 11 18 10.5 22L5.5 22C5 18 0 15 0 9Z"/>
+        <path id="Mark_L_Bottom" fill="#8DC63F" d="M0 35A8 8 0 0 0 16 35C16 29 11 26 10.5 22L5.5 22C5 26 0 29 0 35Z"/>
+        <path id="Mark_R_Top" fill="#8DC63F" transform="translate(19 0)" d="M0 9A8 8 0 0 1 16 9C16 15 11 18 10.5 22L5.5 22C5 18 0 15 0 9Z"/>
+        <path id="Mark_R_Bottom" fill="#1A95DC" transform="translate(19 0)" d="M0 35A8 8 0 0 0 16 35C16 29 11 26 10.5 22L5.5 22C5 26 0 29 0 35Z"/>
+      </g>
+      <text id="Logo_Wordmark" x="84" y="69" font-family="Montserrat, sans-serif" font-weight="700" font-size="28" letter-spacing="2.5" fill="#464B53">HEALTHRIAN</text>
+    </g>
+
+    <g id="Headline">
+      <text id="Category" x="35" y="124" font-family="Source Sans 3, sans-serif" font-weight="400" font-size="24" fill="#2B3440">Patch-type 12-lead ECG</text>
+      <text id="Product_Name" x="32" y="186" font-family="Montserrat, sans-serif" font-weight="800" font-size="64" letter-spacing="-1" fill="#0B1F3A">CARDIO <tspan id="Product_Name_EM" fill="url(#em-gradient)">EM</tspan></text>
+      <text id="Actual_Size_Label" x="35" y="224" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="15" letter-spacing="2" fill="#6B7682">ACTUAL SIZE  ·  48.4 × 57.0 mm</text>
+    </g>
+
+    <g id="Guides_Hide_Before_Print" visibility="hidden">
+      <rect id="Safe_Area_49x79mm" x="30" y="30" width="490" height="790" fill="none" stroke="#FF3B30" stroke-width="1" stroke-dasharray="6 4"/>
+      <rect id="Product_Body_48.4x57.0mm" x="33" y="246" width="484" height="570" fill="none" stroke="#007AFF" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

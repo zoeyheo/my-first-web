@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="850" viewBox="0 0 550 850">
+  <!-- Scale: 1 mm = 10 px. Trim 55 x 85 mm. Safe area 49 x 79 mm (3 mm inset). -->
+  <defs>
+    <clipPath id="card-clip-back"><rect width="550" height="850"/></clipPath>
+    <linearGradient id="wave-gradient" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#D6ECFA"/>
+      <stop offset="1" stop-color="#E4F3D6"/>
+    </linearGradient>
+  </defs>
+  <g id="Card_Back" clip-path="url(#card-clip-back)">
+    <rect id="Background" width="550" height="850" fill="#FFFFFF"/>
+    <path id="Wave" fill="url(#wave-gradient)" d="M0 850L0 812C170 800 350 735 550 610L550 850Z"/>
+    <path id="Wave_Line" fill="none" stroke="#CFE6F5" stroke-width="1.5" d="M0 790C170 780 360 705 550 575"/>
+
+    <g id="Logo_HEALTHRIAN">
+      <g id="Logo_Mark" transform="translate(35 36)">
+        <path id="Mark_L_Top" fill="#1A95DC" d="M0 9A8 8 0 0 1 16 9C16 15 11 18 10.5 22L5.5 22C5 18 0 15 0 9Z"/>
+        <path id="Mark_L_Bottom" fill="#8DC63F" d="M0 35A8 8 0 0 0 16 35C16 29 11 26 10.5 22L5.5 22C5 26 0 29 0 35Z"/>
+        <path id="Mark_R_Top" fill="#8DC63F" transform="translate(19 0)" d="M0 9A8 8 0 0 1 16 9C16 15 11 18 10.5 22L5.5 22C5 18 0 15 0 9Z"/>
+        <path id="Mark_R_Bottom" fill="#1A95DC" transform="translate(19 0)" d="M0 35A8 8 0 0 0 16 35C16 29 11 26 10.5 22L5.5 22C5 26 0 29 0 35Z"/>
+      </g>
+      <text id="Logo_Wordmark" x="84" y="69" font-family="Montserrat, sans-serif" font-weight="700" font-size="28" letter-spacing="2.5" fill="#464B53">HEALTHRIAN</text>
+    </g>
+    <line id="Logo_Divider" x1="334" y1="34" x2="334" y2="88" stroke="#C9CFD6" stroke-width="1.5"/>
+    <g id="Slogan">
+      <text x="348" y="48" font-family="Source Sans 3, sans-serif" font-size="17" fill="#6B7280">Better Data</text>
+      <text x="348" y="67" font-family="Source Sans 3, sans-serif" font-size="17" fill="#6B7280">for a Healthier</text>
+      <text x="348" y="86" font-family="Source Sans 3, sans-serif" font-size="17" fill="#6B7280">Tomorrow</text>
+    </g>
+
+    <g id="Product_Tagline">
+      <text x="35" y="142" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="22" fill="#0B1F3A">Anytime, Anywhere</text>
+      <text x="35" y="170" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="22" fill="#0B1F3A">Clinical-Grade 12-lead ECG</text>
+    </g>
+
+    <g id="Contact">
+      <g id="Contact_Web">
+        <text x="35" y="222" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#1A95DC">W</text>
+        <text x="72" y="222" font-family="Source Sans 3, sans-serif" font-size="21" fill="#1F2933">www.healthrian.com</text>
+      </g>
+      <g id="Contact_Email">
+        <text x="37" y="256" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#1A95DC">E</text>
+        <text x="72" y="256" font-family="Source Sans 3, sans-serif" font-size="21" fill="#1F2933">service@healthrian.com</text>
+      </g>
+      <g id="Contact_Tel">
+        <text x="37" y="290" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#1A95DC">T</text>
+        <text x="72" y="290" font-family="Source Sans 3, sans-serif" font-size="21" fill="#1F2933">+82-42-716-7179</text>
+      </g>
+      <g id="Contact_Address">
+        <text x="36" y="324" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#1A95DC">A</text>
+        <text x="72" y="324" font-family="Source Sans 3, sans-serif" font-size="21" fill="#1F2933">3F, 71, Jukdong-ro, Yuseong-Gu,</text>
+        <text x="72" y="351" font-family="Source Sans 3, sans-serif" font-size="21" fill="#1F2933">Daejeon, Republic of Korea</text>
+      </g>
+    </g>
+
+    <line id="Divider_1" x1="35" y1="384" x2="515" y2="384" stroke="#D5DAE0" stroke-width="1.5"/>
+
+    <g id="Features" fill="none" stroke="#0B2545" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <g id="Feature_Leadless_12-lead_ECG">
+        <circle cx="115" cy="434" r="25"/>
+        <path d="M100 434H107L111 424L117 444L121 428L124 434H130"/>
+        <text x="115" y="486" text-anchor="middle" stroke="none" fill="#1F2933" font-family="Source Sans 3, sans-serif" font-size="17">Leadless</text>
+        <text x="115" y="507" text-anchor="middle" stroke="none" fill="#1F2933" font-family="Source Sans 3, sans-serif" font-size="17">12-lead ECG</text>
+      </g>
+      <line x1="195" y1="414" x2="195" y2="510" stroke="#D5DAE0" stroke-width="1.5"/>
+      <g id="Feature_AI_Analysis">
+        <circle cx="275" cy="434" r="25"/>
+        <rect x="265" y="424" width="20" height="20" rx="3"/>
+        <path d="M270 424V420M275 424V420M280 424V420M270 444V448M275 444V448M280 444V448M265 429H261M265 434H261M265 439H261M285 429H289M285 434H289M285 439H289"/>
+        <text x="275" y="437.5" text-anchor="middle" stroke="none" fill="#0B2545" font-family="Montserrat, sans-serif" font-weight="700" font-size="9">AI</text>
+        <text x="275" y="486" text-anchor="middle" stroke="none" fill="#1F2933" font-family="Source Sans 3, sans-serif" font-size="17">AI Analysis</text>
+      </g>
+      <line x1="355" y1="414" x2="355" y2="510" stroke="#D5DAE0" stroke-width="1.5"/>
+      <g id="Feature_Clinical_Report">
+        <circle cx="435" cy="434" r="25"/>
+        <path d="M427 421H439L444 426V447H427Z"/>
+        <path d="M439 421V426H444"/>
+        <path d="M431 432H440M431 437H440M431 442H437"/>
+        <text x="435" y="486" text-anchor="middle" stroke="none" fill="#1F2933" font-family="Source Sans 3, sans-serif" font-size="17">Clinical</text>
+        <text x="435" y="507" text-anchor="middle" stroke="none" fill="#1F2933" font-family="Source Sans 3, sans-serif" font-size="17">Report</text>
+      </g>
+    </g>
+
+    <line id="Divider_2" x1="35" y1="540" x2="515" y2="540" stroke="#D5DAE0" stroke-width="1.5"/>
+
+    <g id="Brochure">
+      <text id="Brochure_Title" x="35" y="578" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="22" fill="#0B1F3A">Product Brochure</text>
+      <g id="QR_KOR_Replace_With_Real_QR">
+        <rect x="35" y="596" width="130" height="130" fill="#FFFFFF" stroke="#9AA5B1" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="100" y="666" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="14" fill="#9AA5B1">[QR KOR]</text>
+        <text x="100" y="758" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#0B1F3A">KOR</text>
+      </g>
+      <g id="QR_ENG_Replace_With_Real_QR">
+        <rect x="190" y="596" width="130" height="130" fill="#FFFFFF" stroke="#9AA5B1" stroke-width="1.5" stroke-dasharray="6 4"/>
+        <text x="255" y="666" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-size="14" fill="#9AA5B1">[QR ENG]</text>
+        <text x="255" y="758" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="700" font-size="20" fill="#0B1F3A">ENG</text>
+      </g>
+    </g>
+
+    <g id="Closing_Line">
+      <line x1="352" y1="736" x2="378" y2="736" stroke="#1A6E8E" stroke-width="2"/>
+      <text x="352" y="762" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13" letter-spacing="2.6" fill="#3F6079">WEARABLE</text>
+      <text x="352" y="783" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13" letter-spacing="2.6" fill="#3F6079">DIAGNOSTICS</text>
+      <text x="352" y="804" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="13" letter-spacing="2.6" fill="#3F6079">FOR EVERYWHERE</text>
+    </g>
+
+    <g id="Guides_Hide_Before_Print" visibility="hidden">
+      <rect id="Safe_Area_49x79mm" x="30" y="30" width="490" height="790" fill="none" stroke="#FF3B30" stroke-width="1" stroke-dasharray="6 4"/>
+    </g>
+  </g>
+</svg>
