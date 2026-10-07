@@ -1,36 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="850" viewBox="0 0 550 850">
   <!-- Scale: 1 mm = 10 px. Trim 55 x 85 mm. Safe area 49 x 79 mm (3 mm inset). -->
-  <!-- Version B: device + holder + adhesive pad at 1:1. Holder/pad sizes are estimated from a low-res photo. -->
+  <!-- Version B: device + holder at 1:1 (no adhesive pad). Holder sizes estimated from a low-res photo. Device body x 5.5-53.9 mm, y 24.6-81.6 mm. -->
   <defs>
     <clipPath id="card-clip-b"><rect width="550" height="850"/></clipPath>
     <linearGradient id="em-gradient-b" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#1676C9"/>
       <stop offset="1" stop-color="#3FA9E6"/>
     </linearGradient>
-    <linearGradient id="clip-gradient" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#E3E6E9"/>
+    <linearGradient id="clip-face" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F3F4F6"/>
+      <stop offset="0.55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF0F2"/>
+    </linearGradient>
+    <linearGradient id="clip-top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9CDD2"/>
+      <stop offset="1" stop-color="#C9CDD2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="clip-bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D5D9DD" stop-opacity="0"/>
+      <stop offset="1" stop-color="#C3C8CD"/>
+    </linearGradient>
+    <linearGradient id="gap-shade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8E959D" stop-opacity="0"/>
+      <stop offset="1" stop-color="#8E959D" stop-opacity="0.75"/>
     </linearGradient>
     <linearGradient id="rail-gradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#ECEEF0"/>
-      <stop offset="1" stop-color="#BCC1C7"/>
+      <stop offset="0" stop-color="#DADDE1"/>
+      <stop offset="0.5" stop-color="#C2C7CC"/>
+      <stop offset="1" stop-color="#8F959C"/>
+    </linearGradient>
+    <linearGradient id="lip-gradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D3D7DB"/>
+      <stop offset="1" stop-color="#AEB3B9"/>
     </linearGradient>
   </defs>
   <g id="Card_Front_B" clip-path="url(#card-clip-b)">
     <rect id="Background" width="550" height="850" fill="#FFFFFF"/>
 
     <g id="Holder_ActualSize_Estimated">
-      <path id="Adhesive_Pad" fill="#E2E4E7" stroke="#D3D6DA" stroke-width="1.5" d="M-259 286C-259 156 -207 96 -107 96L953 96L673 866C653 926 613 986 553 986L-127 986C-217 986 -259 926 -259 846Z"/>
-      <path id="Clip_Block_Shadow" fill="#000000" fill-opacity="0.07" transform="translate(4 9)" d="M38 394L-96 394Q-124 394 -124 422L-124 587Q-124 672 -39 672L38 672Z"/>
-      <path id="Clip_Block" fill="url(#clip-gradient)" stroke="#CDD1D6" stroke-width="1.5" d="M38 394L-96 394Q-124 394 -124 422L-124 587Q-124 672 -39 672L38 672Z"/>
-      <rect id="Holder_Rail_Right" x="510" y="387" width="31" height="274" rx="5" fill="url(#rail-gradient)" stroke="#B5BAC0" stroke-width="1"/>
-      <rect id="Holder_Lip_Bottom" x="190" y="790" width="170" height="37" rx="6" fill="#CDD2D7" stroke="#B9BEC4" stroke-width="1"/>
-      <rect id="Holder_Lip_Top" x="232" y="236" width="79" height="18" rx="3" fill="#D3D7DB" stroke="#BDC2C8" stroke-width="1"/>
+      <g id="Clip_Block">
+        <g id="Clip_Block_Shadow" fill="#1F2933">
+          <path fill-opacity="0.04" d="M63 404L-99 404L-99 612Q-99 690 -40 690L63 690Z"/>
+          <path fill-opacity="0.05" d="M61 402L-101 402L-101 612Q-101 683 -43 683L61 683Z"/>
+          <path fill-opacity="0.06" d="M60 400L-102 400L-102 613Q-102 677 -45 677L60 677Z"/>
+        </g>
+        <path id="Clip_Block_Body" fill="url(#clip-face)" stroke="#CBD0D5" stroke-width="1" d="M59 398L-95 398Q-103 398 -103 406L-103 615Q-103 672 -46 672L59 672Z"/>
+        <rect id="Clip_Block_Top_Edge" x="-103" y="398" width="162" height="12" fill="url(#clip-top)"/>
+        <rect id="Clip_Block_Bottom_Shade" x="-46" y="640" width="105" height="32" fill="url(#clip-bottom)"/>
+        <rect id="Clip_Block_Highlight" x="8" y="414" width="9" height="236" rx="4" fill="#FFFFFF" fill-opacity="0.9"/>
+        <rect id="Clip_Gap_Shadow" x="44" y="404" width="14" height="264" fill="url(#gap-shade)"/>
+      </g>
+      <g id="Holder_Rail_Right">
+        <rect x="536" y="390" width="34" height="280" rx="6" fill="url(#rail-gradient)" stroke="#9FA5AC" stroke-width="1"/>
+        <rect x="540" y="398" width="4" height="264" rx="2" fill="#F4F5F6"/>
+      </g>
+      <g id="Holder_Lip_Top">
+        <rect x="254" y="234" width="79" height="20" rx="4" fill="url(#lip-gradient)" stroke="#A9AFB5" stroke-width="1"/>
+      </g>
+      <g id="Holder_Lip_Bottom">
+        <path d="M209 790L383 790L375 826Q374 830 369 830L223 830Q218 830 217 826Z" fill="url(#lip-gradient)" stroke="#9EA4AB" stroke-width="1"/>
+        <path d="M220 823L372 823" stroke="#8F959C" stroke-width="2" stroke-linecap="round"/>
+      </g>
     </g>
 
     <g id="Product_Photo_ActualSize_48.4x57.0mm">
-      <image id="CARDIO_EM_Product" x="-47.2" y="197" width="683" height="727.5" preserveAspectRatio="none" xlink:href="__PRODUCT__" href="__PRODUCT__"/>
+      <image id="CARDIO_EM_Product" x="-25.2" y="197" width="683" height="727.5" preserveAspectRatio="none" xlink:href="__PRODUCT__" href="__PRODUCT__"/>
     </g>
 
     <g id="Logo_HEALTHRIAN">
@@ -44,14 +79,14 @@
     </g>
 
     <g id="Headline">
-      <text id="Category" x="35" y="134" font-family="Source Sans 3, sans-serif" font-weight="400" font-size="24" fill="#2B3440">Patch-type 12-lead ECG</text>
-      <text id="Product_Name" x="32" y="194" font-family="Montserrat, sans-serif" font-weight="800" font-size="64" letter-spacing="-1" fill="#0B1F3A">CARDIO <tspan id="Product_Name_EM" fill="url(#em-gradient-b)">EM</tspan></text>
-      <text id="Actual_Size_Label" x="35" y="226" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="15" letter-spacing="2" fill="#56616D">ACTUAL SIZE  ·  WITH HOLDER</text>
+      <text id="Category" x="35" y="124" font-family="Source Sans 3, sans-serif" font-weight="400" font-size="24" fill="#2B3440">Patch-type 12-lead ECG</text>
+      <text id="Product_Name" x="32" y="186" font-family="Montserrat, sans-serif" font-weight="800" font-size="64" letter-spacing="-1" fill="#0B1F3A">CARDIO <tspan id="Product_Name_EM" fill="url(#em-gradient-b)">EM</tspan></text>
+      <text id="Actual_Size_Label" x="35" y="224" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="15" letter-spacing="2" fill="#56616D">ACTUAL SIZE  ·  WITH HOLDER</text>
     </g>
 
     <g id="Guides_Hide_Before_Print" visibility="hidden">
       <rect id="Safe_Area_49x79mm" x="30" y="30" width="490" height="790" fill="none" stroke="#FF3B30" stroke-width="1" stroke-dasharray="6 4"/>
-      <rect id="Product_Body_48.4x57.0mm" x="33" y="246" width="484" height="570" fill="none" stroke="#007AFF" stroke-width="1"/>
+      <rect id="Product_Body_48.4x57.0mm" x="55" y="246" width="484" height="570" fill="none" stroke="#007AFF" stroke-width="1"/>
     </g>
   </g>
 </svg>
