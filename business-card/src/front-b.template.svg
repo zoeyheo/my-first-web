@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="850" viewBox="0 0 550 850">
   <!-- Scale: 1 mm = 10 px. Trim 55 x 85 mm. Safe area 49 x 79 mm (3 mm inset). -->
-  <!-- Version B: device + holder at 1:1 (no adhesive pad). Holder sizes estimated from a low-res photo. Device body x 5.5-53.9 mm, y 24.6-81.6 mm. -->
+  <!-- Version B: device centered (x 3.3-51.7 mm, y 24.6-81.6 mm) in holder 66 x 58 mm (x -12.0-54.0 mm, y 24.1-82.1 mm). Holder part shapes approximated from photo. -->
   <defs>
     <clipPath id="card-clip-b"><rect width="550" height="850"/></clipPath>
     <linearGradient id="em-gradient-b" x1="0" y1="0" x2="1" y2="0">
@@ -38,34 +38,34 @@
   <g id="Card_Front_B" clip-path="url(#card-clip-b)">
     <rect id="Background" width="550" height="850" fill="#FFFFFF"/>
 
-    <g id="Holder_ActualSize_Estimated">
+    <g id="Holder_66x58mm_ActualSize">
       <g id="Clip_Block">
         <g id="Clip_Block_Shadow" fill="#1F2933">
-          <path fill-opacity="0.04" d="M63 404L-99 404L-99 612Q-99 690 -40 690L63 690Z"/>
-          <path fill-opacity="0.05" d="M61 402L-101 402L-101 612Q-101 683 -43 683L61 683Z"/>
-          <path fill-opacity="0.06" d="M60 400L-102 400L-102 613Q-102 677 -45 677L60 677Z"/>
+          <path fill-opacity="0.04" d="M41 404L-116 404L-116 612Q-116 690 -57 690L41 690Z"/>
+          <path fill-opacity="0.05" d="M39 402L-118 402L-118 612Q-118 683 -60 683L39 683Z"/>
+          <path fill-opacity="0.06" d="M38 400L-119 400L-119 613Q-119 677 -62 677L38 677Z"/>
         </g>
-        <path id="Clip_Block_Body" fill="url(#clip-face)" stroke="#CBD0D5" stroke-width="1" d="M59 398L-95 398Q-103 398 -103 406L-103 615Q-103 672 -46 672L59 672Z"/>
-        <rect id="Clip_Block_Top_Edge" x="-103" y="398" width="162" height="12" fill="url(#clip-top)"/>
-        <rect id="Clip_Block_Bottom_Shade" x="-46" y="640" width="105" height="32" fill="url(#clip-bottom)"/>
-        <rect id="Clip_Block_Highlight" x="8" y="414" width="9" height="236" rx="4" fill="#FFFFFF" fill-opacity="0.9"/>
-        <rect id="Clip_Gap_Shadow" x="44" y="404" width="14" height="264" fill="url(#gap-shade)"/>
+        <path id="Clip_Block_Body" fill="url(#clip-face)" stroke="#CBD0D5" stroke-width="1" d="M37 398L-112 398Q-120 398 -120 406L-120 615Q-120 672 -63 672L37 672Z"/>
+        <rect id="Clip_Block_Top_Edge" x="-120" y="398" width="157" height="12" fill="url(#clip-top)"/>
+        <rect id="Clip_Block_Bottom_Shade" x="-63" y="640" width="100" height="32" fill="url(#clip-bottom)"/>
+        <rect id="Clip_Block_Highlight" x="6" y="414" width="8" height="236" rx="4" fill="#FFFFFF" fill-opacity="0.9"/>
+        <rect id="Clip_Gap_Shadow" x="22" y="404" width="14" height="264" fill="url(#gap-shade)"/>
       </g>
       <g id="Holder_Rail_Right">
-        <rect x="536" y="390" width="34" height="280" rx="6" fill="url(#rail-gradient)" stroke="#9FA5AC" stroke-width="1"/>
-        <rect x="540" y="398" width="4" height="264" rx="2" fill="#F4F5F6"/>
+        <rect x="508" y="390" width="32" height="280" rx="6" fill="url(#rail-gradient)" stroke="#9FA5AC" stroke-width="1"/>
+        <rect x="512" y="398" width="4" height="264" rx="2" fill="#F4F5F6"/>
       </g>
       <g id="Holder_Lip_Top">
-        <rect x="254" y="234" width="79" height="20" rx="4" fill="url(#lip-gradient)" stroke="#A9AFB5" stroke-width="1"/>
+        <rect x="232" y="241" width="79" height="16" rx="4" fill="url(#lip-gradient)" stroke="#A9AFB5" stroke-width="1"/>
       </g>
       <g id="Holder_Lip_Bottom">
-        <path d="M209 790L383 790L375 826Q374 830 369 830L223 830Q218 830 217 826Z" fill="url(#lip-gradient)" stroke="#9EA4AB" stroke-width="1"/>
-        <path d="M220 823L372 823" stroke="#8F959C" stroke-width="2" stroke-linecap="round"/>
+        <path d="M187 790L361 790L353 818Q352 821 347 821L201 821Q196 821 195 818Z" fill="url(#lip-gradient)" stroke="#9EA4AB" stroke-width="1"/>
+        <path d="M198 815L350 815" stroke="#8F959C" stroke-width="2" stroke-linecap="round"/>
       </g>
     </g>
 
     <g id="Product_Photo_ActualSize_48.4x57.0mm">
-      <image id="CARDIO_EM_Product" x="-25.2" y="197" width="683" height="727.5" preserveAspectRatio="none" xlink:href="__PRODUCT__" href="__PRODUCT__"/>
+      <image id="CARDIO_EM_Product" x="-47.2" y="197" width="683" height="727.5" preserveAspectRatio="none" xlink:href="__PRODUCT__" href="__PRODUCT__"/>
     </g>
 
     <g id="Logo_HEALTHRIAN">
@@ -86,7 +86,8 @@
 
     <g id="Guides_Hide_Before_Print" visibility="hidden">
       <rect id="Safe_Area_49x79mm" x="30" y="30" width="490" height="790" fill="none" stroke="#FF3B30" stroke-width="1" stroke-dasharray="6 4"/>
-      <rect id="Product_Body_48.4x57.0mm" x="55" y="246" width="484" height="570" fill="none" stroke="#007AFF" stroke-width="1"/>
+      <rect id="Holder_Outline_66x58mm" x="-120" y="241" width="660" height="580" fill="none" stroke="#34C759" stroke-width="1"/>
+      <rect id="Product_Body_48.4x57.0mm" x="33" y="246" width="484" height="570" fill="none" stroke="#007AFF" stroke-width="1"/>
     </g>
   </g>
 </svg>
