@@ -1,0 +1,179 @@
+1
+00:00:00,000 --> 00:00:04,900
+CARDIO EM operating demonstration
+
+2
+00:00:05,000 --> 00:00:09,900
+Precision ECG analysis once found only in hospitals,
+
+3
+00:00:10,000 --> 00:00:13,500
+now light enough for anywhere.
+
+4
+00:00:13,600 --> 00:00:18,300
+On the ward, in a moving ambulance,
+
+5
+00:00:18,400 --> 00:00:22,100
+and out at remote consultations.
+
+6
+00:00:22,200 --> 00:00:28,900
+The system consists of a sensor module, a cradle and an electrode holder.
+
+7
+00:00:29,000 --> 00:00:35,500
+The limb-lead cable and electrode patch are optional.
+
+8
+00:00:35,600 --> 00:00:40,700
+Disposable electrodes are prepared separately.
+
+9
+00:00:40,800 --> 00:00:45,900
+The sensor module charges with the charging cable.
+
+10
+00:00:46,000 --> 00:00:50,700
+First, check each component.
+
+11
+00:00:50,800 --> 00:00:56,100
+Seat the sensor module on the cradle to charge it.
+
+12
+00:00:56,200 --> 00:01:03,100
+Orange means charging; green means charging is complete.
+
+13
+00:01:03,200 --> 00:01:11,600
+Install the CARDIO PRO app and turn Bluetooth on.
+
+14
+00:01:11,700 --> 00:01:17,600
+Connect disposable electrodes to the limb-lead cable.
+
+15
+00:01:17,700 --> 00:01:24,400
+Peel the liner back slightly and attach the electrode holder.
+
+16
+00:01:24,500 --> 00:01:29,600
+Clip the limb-lead cable into the holder.
+
+17
+00:01:29,700 --> 00:01:36,000
+The sensor module goes on once the electrodes are secure on the chest.
+
+18
+00:01:36,100 --> 00:01:42,600
+Electrodes must touch bare skin, not clothing.
+
+19
+00:01:42,700 --> 00:01:46,800
+Place the electrode patch on the chest.
+
+20
+00:01:46,900 --> 00:01:54,600
+Attach limb electrodes RA, LA, RL and LL at their positions.
+
+21
+00:01:54,700 --> 00:02:00,200
+Once everything is secure, attach the sensor module.
+
+22
+00:02:00,300 --> 00:02:08,700
+Log in to the app. First time? Create an account.
+
+23
+00:02:08,800 --> 00:02:14,500
+Tap Bluetooth Connect on the home screen.
+
+24
+00:02:14,600 --> 00:02:22,700
+When CARDIO EM appears, tap the Bluetooth button to connect.
+
+25
+00:02:22,800 --> 00:02:29,900
+Once connected, press Play to open the measurement screen.
+
+26
+00:02:30,000 --> 00:02:38,400
+Check electrode status at the top right. Red means unstable contact.
+
+27
+00:02:38,500 --> 00:02:46,900
+If contact is poor, press again to secure; for dry skin, apply lotion or wipe it first.
+
+28
+00:02:47,000 --> 00:02:54,900
+When all turn green, press Play to start measuring.
+
+29
+00:02:55,000 --> 00:03:02,900
+Live waveforms and heart rate appear, and filters can be set.
+
+30
+00:03:03,000 --> 00:03:10,300
+Tap Stop to end the measurement and save the record.
+
+31
+00:03:10,400 --> 00:03:18,100
+Find saved records under Import Data on the home screen.
+
+32
+00:03:18,200 --> 00:03:24,700
+Filter and sort to find a record, then tap it to open the waveform.
+
+33
+00:03:24,800 --> 00:03:32,500
+Beat classification separates normal from abnormal beats.
+
+34
+00:03:32,600 --> 00:03:39,300
+Atrial fibrillation or flutter appears under Rhythm classification.
+
+35
+00:03:39,400 --> 00:03:45,100
+The trend graph shows heart-rate changes over time.
+
+36
+00:03:45,200 --> 00:03:53,600
+Save a region of interest as a 10-second ECG strip, 5 s either side.
+
+37
+00:03:53,700 --> 00:04:00,400
+On the move, the steps are the same. Attach the sensor module,
+
+38
+00:04:00,500 --> 00:04:07,000
+check electrode status on the tablet and start measuring.
+
+39
+00:04:07,100 --> 00:04:11,800
+Watch live waveforms and heart rate,
+
+40
+00:04:11,900 --> 00:04:17,600
+then save the record and share it with the hospital.
+
+41
+00:04:17,700 --> 00:04:25,600
+Tap the PDF icon to see the waveform on ECG paper.
+
+42
+00:04:25,700 --> 00:04:33,600
+PR, QRS, QT and QTc values are shown with it.
+
+43
+00:04:33,700 --> 00:04:40,600
+Adjust the gain, then save as PDF or share.
+
+44
+00:04:40,700 --> 00:04:48,800
+After use, detach the sensor module and store it on the cradle or holder.
+
+45
+00:04:48,900 --> 00:04:55,800
+Precision ECG analysis once found only in hospitals, now light enough for anywhere.
