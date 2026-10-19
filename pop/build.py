@@ -24,4 +24,11 @@ x0, y0 = (W - 900 * COLS) // 2, (H - 550 * ROWS) // 2
 cards = "\n".join(card(x0 + c * 900, y0 + r * 550) for r in range(ROWS) for c in range(COLS))
 a4 = svg(W, H, f'<!-- A4 210 × 297mm (10px = 1mm), 카드 {COLS * ROWS}장 -->\n<rect width="{W}" height="{H}" fill="#FFFFFF"/>\n' + cards)
 open("healthrian_pop_A4.svg", "w").write(a4)
-    '<!doctype html><meta charset="utf-8"><style>@page{size:A4;margin:0}html,body{margin:0}svg{display:block;width:210mm;height:297mm}</style>\n' + a4)
+
+# A4 인쇄용 PDF (실제 크기 100%)
+import os, subprocess, tempfile
+with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False) as f:
+    f.write('<!doctype html><meta charset="utf-8"><style>@page{size:A4;margin:0}html,body{margin:0}svg{display:block;width:210mm;height:297mm}</style>\n' + a4)
+subprocess.run([os.environ.get("CHROME", "chromium"), "--headless", "--no-sandbox", "--no-pdf-header-footer",
+                "--print-to-pdf=healthrian_pop_A4.pdf", f.name], check=True, capture_output=True)
+os.unlink(f.name)
