@@ -24,6 +24,8 @@ const CARDS = [
 ];
 
 const CARD_W = mm(90), CARD_H = mm(55), COLS = 2;
+const GAP = mm(2); // 카드 사이 간격 (재단선이 옆 카드와 붙지 않도록)
+const NONE = { style: BorderStyle.NONE, size: 0, color: "FFFFFF" };
 
 const line = (text, size, bold, after) =>
   new Paragraph({
@@ -46,10 +48,26 @@ const card = ([company, nameKo, nameEn, category]) =>
     ],
   });
 
+// 간격용 빈 칸 (테두리 없음)
+const spacer = (width) =>
+  new TableCell({
+    width: { size: width, type: WidthType.DXA },
+    margins: { top: 0, bottom: 0, left: 0, right: 0 },
+    borders: { top: NONE, bottom: NONE, left: NONE, right: NONE },
+    children: [new Paragraph({ spacing: { before: 0, after: 0, line: 20, lineRule: "exact" }, children: [new TextRun({ text: "", size: 2 })] })],
+  });
+
+// 열 구성: 카드 | 간격 | 카드
+const columnWidths = Array.from({ length: COLS * 2 - 1 }, (_, i) => (i % 2 ? GAP : CARD_W));
+const TABLE_W = CARD_W * COLS + GAP * (COLS - 1);
+
 const rows = [];
 for (let i = 0; i < CARDS.length; i += COLS) {
-  const cells = CARDS.slice(i, i + COLS).map(card);
-  while (cells.length < COLS) cells.push(card(["", "", "", ""])); // 홀수일 때 빈 칸
+  if (i > 0) // 행 사이 간격
+    rows.push(new TableRow({ height: { value: GAP, rule: HeightRule.EXACT }, children: columnWidths.map(spacer) }));
+  const cards = CARDS.slice(i, i + COLS);
+  while (cards.length < COLS) cards.push(["", "", "", ""]); // 홀수일 때 빈 칸
+  const cells = cards.flatMap((c, j) => (j ? [spacer(GAP), card(c)] : [card(c)]));
   rows.push(new TableRow({ height: { value: CARD_H, rule: HeightRule.EXACT }, cantSplit: true, children: cells }));
 }
 
@@ -58,14 +76,14 @@ const doc = new Document({
     properties: {
       page: {
         size: { width: 11906, height: 16838 }, // A4
-        // 카드 영역 180 × 275mm를 가운데 배치 (아래 여백은 표 뒤 필수 문단 자리 확보용으로 조금 작게)
-        margin: { top: mm(11), bottom: mm(9), left: mm(15), right: mm(15), header: 0, footer: 0 },
+        // 카드 영역 182 × 283mm(간격 포함)를 가운데 배치 (아래 여백은 표 뒤 필수 문단 자리 확보용으로 조금 작게)
+        margin: { top: mm(7), bottom: mm(6), left: mm(14), right: mm(14), header: 0, footer: 0 },
       },
     },
     children: [
       new Table({
-        width: { size: CARD_W * COLS, type: WidthType.DXA },
-        columnWidths: Array(COLS).fill(CARD_W),
+        width: { size: TABLE_W, type: WidthType.DXA },
+        columnWidths,
         layout: TableLayoutType.FIXED,
         rows,
       }),
